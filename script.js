@@ -17,7 +17,12 @@ const generatepassword=(annyway)=>{
     }
     return password;
 }
-const span=document.querySelector(".password span");
-span.textContent=generatepassword(10);
+
+const button=document.querySelector(".btn");
+button.addEventListener("click",()=>{
+    const span=document.querySelector(".password span");
+    span.textContent=generatepassword(10);
+});
+
 
 console.log("un mot de passGenerer   "+generatepassword(10))
